@@ -1,0 +1,119 @@
+body{
+	font-family: "Lucida Console";
+	line-height: 1.25;
+	margin: 0;
+}
+
+#logo{
+	height: 200px;
+	width: auto;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+#background-desktop{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	z-index: 0;
+	position: fixed;
+	z-index: 0;
+}
+
+.background{
+	width: 100%;
+	height: auto;
+	position: fixed;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	margin: 0;
+}
+
+.topnav{
+	overflow: auto;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index:100;
+}
+.topnavlinks{
+	overflow: auto;
+	position: fixed;
+	top: 90px;
+	left: 210px;
+	width: 100%;
+	z-index:100;
+	background-color: black;
+}
+
+.topnavlinks a {
+	float: center;
+	color: white;
+	text-align: center;
+	padding: 30px 5px;
+	text-decoration: none;
+	font-size: 20px;
+	transition: 0.5s;
+}
+
+.topnavlinks a:hover{
+	background-color: #b82cb8;
+	color: black;
+	font-size: 22px;
+	font-weight: bold;
+	padding: 30px 5px;
+}
+
+.bottomnav {
+	background-color: black;
+	overflow: auto;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index:100;
+}
+.bottomnav a {
+	float: right;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 12px 14px;
+	text-decoration: none;
+	font-size: 20px;
+}
+.bottomnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.content{
+	height: 25%;
+	width: 50%;
+	background-color: white;
+	z-index: 200;
+	top: 35%;
+	left: 10%;
+	vertical-align: middle;
+	position: absolute;
+}
+
+#topBtn{
+	display: none;
+	position: fixed;
+	bottom: 150px;
+	right: 30px;
+	z-index: 99;
+	border: none;
+	border-radius: 50%;
+	padding: 15px;
+	font-size: 15px;
+	color: #f2f2f2;
+	background-color: black;
+	opacity: 0;
+	font-family: 'Press Start 2P', cursive;
+	transition: 0.5s
+}
+#topBtn:hover{
+	background-color: #b82cb8;
+	color: black;
+	font-size: 16.5px;
