@@ -1,27 +1,30 @@
 const template = document.createElement('template');
 
 template.innerHTML = `
-	<div class = "bacckground">
-		<img src = "../Assets/background.PNG" alt = "Background" id = "background-desktop">
+	<div class = "navui">
+		<ui>
+			<li>
+				<a href="home.php"><img src = "../Assets/logo.png" alt="Hotel Logo" id = "logo"></a>
+			</li>
+			<li>
+				<a class = "navlinks" href="home.php">Tropical Byte Hotel</a>
+			</li>
+			<li>
+				<a class = "navlinks" href="">Nearby Locations</a>
+			</li>
+			<li>
+				<a class = "navlinks" href="">Check Your Reservation</a>
+			</li>
+		</ui>
 	</div>
-	<div class = "topnav">
-		<a href="../index.php"><img src = "../Assets/logo.png" alt="Hotel Logo" id = "logo"></a>
-		<div class = "topnavlinks">
-			<a href="../index.php">Tropical Byte Hotel</a>
-			<a href="">Local Attractions</a>
-			<a href="">Dining Options</a>
-			<a href="">Shopping Nearby</a>
-			<a href="">Book Now!</a>
-			<a href="">Check Your Reservation</a>
-		</div>
-	</div>
-`;
-
-template.innerHTML += `
+	
+	<img src = "../Assets/background.PNG" alt = "Background" id = "background-desktop">
+	
+	
 	<button onclick="toTop()" id="topBtn" title="Go to top">&#8593;</button>
 	<div class = "bottomnav">
+		<p>[Insert Address Here]</p>
 		<a href="" >Contact Us <i class = "fa fa-envelope"></i></a>
-		
 	</div>
 `;
 

@@ -2,22 +2,22 @@ body{
 	font-family: "Lucida Console";
 	line-height: 1.25;
 	margin: 0;
+	background-color: white;
 }
 
 #logo{
-	height: 200px;
-	width: auto;
+	height: auto;
+	width: 175px;
 	margin: 0 auto;
 	padding: 5px;
 }
 
 #background-desktop{
 	width: 100%;
-	height: 100%;
+	height: auto;
 	margin: 0;
 	z-index: 0;
 	position: fixed;
-	z-index: 0;
 }
 
 .background{
@@ -30,41 +30,6 @@ body{
 	margin: 0;
 }
 
-.topnav{
-	overflow: auto;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index:100;
-}
-.topnavlinks{
-	overflow: auto;
-	position: fixed;
-	top: 90px;
-	left: 210px;
-	width: 100%;
-	z-index:100;
-	background-color: black;
-}
-
-.topnavlinks a {
-	float: center;
-	color: white;
-	text-align: center;
-	padding: 30px 5px;
-	text-decoration: none;
-	font-size: 20px;
-	transition: 0.5s;
-}
-
-.topnavlinks a:hover{
-	background-color: #b82cb8;
-	color: black;
-	font-size: 22px;
-	font-weight: bold;
-	padding: 30px 5px;
-}
-
 .bottomnav {
 	background-color: black;
 	overflow: auto;
@@ -75,6 +40,7 @@ body{
 }
 .bottomnav a {
 	float: right;
+	display: inline-block;
 	color: #f2f2f2;
 	text-align: center;
 	padding: 12px 14px;
@@ -86,15 +52,74 @@ body{
 	color: black;
 }
 
+.bottomnav p{
+	float: center;
+	display: inline-block;
+	padding: 12px 14px;
+	text-align: center;
+	color: #f2f2f2;
+}
+
 .content{
-	height: 25%;
-	width: 50%;
+	height: 100%;
 	background-color: white;
-	z-index: 200;
+	z-index: 50;
+	position: relative;
+}
+
+ul{
 	top: 35%;
 	left: 10%;
+	width: 75%;
+	z-index: 50;
 	vertical-align: middle;
 	position: absolute;
+	list-style-type: none;
+}
+
+li {
+	height: 25%;
+}
+
+.navui{
+	overflow: auto;
+	position: fixed;
+	top: 0;
+	z-index:100;
+	width: 100%;
+	display: flex;
+}
+
+.navui ui{
+	list-style-type: none;
+	background-color: black;
+	position: fixed;
+	width: 100%;
+	align-items: center;
+	display: flex;
+}
+
+.navui li{
+	display: inline-block;
+	height: 100%
+}
+
+.navlinks{
+	float: center;
+	color: white;
+	text-align: center;
+	padding: 30px 10px;
+	text-decoration: none;
+	font-size: 20px;
+	transition: 0.5s;
+}
+
+.navlinks:hover{
+	background-color: #b82cb8;
+	color: black;
+	font-size: 22px;
+	font-weight: bold;
+	padding: 30px 10px;
 }
 
 #topBtn{

@@ -11,28 +11,12 @@
 	</head>
 	<body>
 		<script src="../Components/Scripts/pageTemplates.js"></script>
-		<div class = "content">
-			<p> test </p>
-		</div>
-		
-		<div class = "content">
-			<p> test </p>
-		</div>
-		
-		<div class = "content">
-			<p> test </p>
-		</div>
-		
-		<div class = "content">
-			<p> test </p>
-		</div>
-		
-		<div class = "content">
-			<p> test </p>
-		</div>
-		
-		<div class = "content">
-			<p> test </p>
-		</div>
+		<ul>
+			<li>
+				<div class = "content">
+					<p> test </p>
+				</div>
+			</li>
+		</ul>
 	</body>
 </html>
