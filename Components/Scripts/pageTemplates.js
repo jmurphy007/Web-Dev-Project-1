@@ -7,13 +7,16 @@ template.innerHTML = `
 				<a href="home.php"><img src = "../Assets/logo.png" alt="Hotel Logo" id = "logo"></a>
 			</li>
 			<li>
-				<a class = "navlinks" href="home.php">Tropical Byte Hotel</a>
+				<a class = "navlinks" href="home.php" style = "font-size: 25px">Tropical Byte Hotel</a>
 			</li>
 			<li>
-				<a class = "navlinks" href="">Nearby Locations</a>
+				<a class = "navlinks" href="locations.php">Nearby Locations</a>
 			</li>
 			<li>
-				<a class = "navlinks" href="">Check Your Reservation</a>
+				<a class = "navlinks" href="booking.php">Book Now!</a>
+			</li>
+			<li>
+				<a class = "navlinks" href="checkReservations.php">Check Your Reservation</a>
 			</li>
 		</ui>
 	</div>

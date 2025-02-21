@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Tropical Byte Hotel - Home</title>
+		<title>Tropical Byte Hotel - Check on Your Reservation</title>
 		<meta charset="utf-8" />
 		<meta name="author" content="Jordan Murphy & Farid Sawaqed" />
 		<meta name="description" content="{insert description here}"/>
@@ -14,7 +14,7 @@
 		<ul>
 			<li>
 				<div class = "content">
-					<p> Home page </p>
+					<p> Check Reservations </p>
 				</div>
 			</li>
 		</ul>
