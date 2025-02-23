@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Tropical Byte Hotel - Book Now!</title>
+		<title>Tropical Byte Hotel - Check on Your Reservation</title>
 		<meta charset="utf-8" />
 		<meta name="author" content="Jordan Murphy & Farid Sawaqed" />
 		<meta name="description" content="{insert description here}"/>
@@ -14,7 +14,14 @@
 		<ul>
 			<li>
 				<div class = "content">
-					<p> Book Now! </p>
+					<h1>Enter your confirmation number to check on your reservation</h1>
+					<form action = "../Components/Scripts/reservationController.php" method = "POST">
+						<center>
+							<label for "confirmationNum">Confirmation Number</label>
+							<input type = "text" class = "form-control" id = "confirmationNum" name = "confirmationNum" required>
+							<button type = "submit" class = "submitBtn">Check Reservation</button>
+						</center>
+					</form>
 				</div>
 			</li>
 		</ul>

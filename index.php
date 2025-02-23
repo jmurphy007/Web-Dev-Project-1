@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		<?php
-			header("Location:Pages/home.php");
+			header("Location:Views/home.php");
 		?>
 	</body>
 </html>

@@ -109,6 +109,49 @@ li {
 	height: 25%;
 }
 
+table{
+	width: 100%;
+	height: auto;
+	font-size: 18px;
+}
+tr{
+	width: 50%;
+	padding: 5%;
+	margin: 0 auto;
+	text-align: right;
+}
+input{
+	width: 65%;
+	height: 30px;
+	text-align: center;
+	border-radius: 25%;
+	padding: 10px 10px;
+}
+
+label{
+	font-size: 20px;
+}
+
+.submitBtn{
+	float: center;
+	color: black;
+	text-align: center;
+	padding: 30px 30px;
+	text-decoration: none;
+	font-size: 20px;
+	transition: 0.5s;
+	border-radius: 12.5%;
+}
+
+.submitBtn:hover{
+	background-color: #b82cb8;
+	color: black;
+	font-size: 22px;
+	font-weight: bold;
+	padding: 30px 30px;
+	border-radius: 12.5%;
+}
+
 .contentli{
 	padding-bottom: 2.5%;
 }
@@ -163,6 +206,10 @@ li {
 	z-index: 300;
 	position: fixed;
 	font-size: 15px;
+	padding: 50px 10px;
+}
+
+.adminBtn:hover{
 	padding: 50px 10px;
 }
 
