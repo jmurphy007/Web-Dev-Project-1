@@ -26,6 +26,11 @@ body{
 	margin: 0 auto;
 	padding: 5px;
 	border-radius: 10%;
+	transition: 0.25s;
+}
+
+#location:hover{
+	width: 52.5%;
 }
 
 #background-desktop{
@@ -60,7 +65,7 @@ body{
 	color: #f2f2f2;
 	text-align: center;
 	bottom: 0;
-	padding: 30px 15px;
+	padding: 20px 15px;
 	text-decoration: none;
 	font-size: 20px;
 	transition: 0.5s;
@@ -82,7 +87,7 @@ body{
 	height: 100%;
 	background-color: black;
 	color: #f2f2f2;
-	opacity: 85%;
+	opacity: 95%;
 	padding: 15px 30px;
 	border-radius: 10px;
 	z-index: 50;
@@ -114,12 +119,29 @@ table{
 	height: auto;
 	font-size: 18px;
 }
+.reservationTr{
+	border-top: 2px solid white;
+}	
+.reservationBottom {
+	border-bottom: 2px solid white;
+}
 tr{
 	width: 50%;
 	padding: 5%;
 	margin: 0 auto;
 	text-align: right;
 }
+
+th td{
+	text-align: center;
+}
+
+.reservation{
+	width: 50%;
+	text-align: left;
+	padding: 5%;
+}
+
 input{
 	width: 65%;
 	height: 30px;

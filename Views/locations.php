@@ -62,6 +62,34 @@
 						<a href="https://www.facebook.com/MarinaGrilleNJ/posts/fresh-tuna-tower-ahi-tuna-mango-avocado-crab-meat-coconut-ginger-ricce-sriracha-/1500960853712462/"><img src = "../Assets/marinagrille.jpg" alt="Marina Grille" id = "location"></a>
 					</center>
 				</div>
+				<li class = "contentli">
+				<div class = "content">
+					<h2>Go Play Arcade</h2>
+					<p>
+						1102 Main St, Belmar, NJ 07719
+					</p>
+					<p>
+						Perfect for all ages, Go Play Arcade is dedicated to provide a fun and exciting experience. Whether it's for hosting a birthday party or private celebrations, camps, class trips, or adult parties, the guests will have the entire staff to themselves. Come on in for an experience you will never forget.
+					</p>
+					<center>
+						<a href="https://discoverbelmar.com/go/go-play"><img src = "../Assets/go-play-arcade.png" alt="Go Play Arcade" id = "location"></a>
+					</center>
+				</div>
+			</li>
+			<li class = "contentli">
+				<div class = "content">
+					<h2>La Dolce Vita</h2>
+					<p>
+						400 Ocean Ave N, Belmar, NJ 07719
+					</p>
+					<p>
+						Wanting traditional Italian seafood, La Dolce Vita is the place for you, where traditional cuisine, savory flavors, and fine wine come together to present a culinary experience like no other. And if that's not enough, all of this comes with an amazing seaside view of our very own beach.
+					</p>
+					<center>
+						<a href="https://discoverbelmar.com/go/la-dolce-vita"><img src = "../Assets/la-dolce-vita.png" alt="La Dolce Vita" id = "location"></a>
+					</center>
+				</div>
+			</li>
 			</li>
 		</ul>
 	</body>

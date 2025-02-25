@@ -3,9 +3,10 @@
 <?php
 	session_start()
 ?>
+
 <html>
 	<head>
-		<title>Tropical Byte Hotel - Admin Login</title>
+		<title>Tropical Byte Hotel - Book Now!</title>
 		<meta charset="utf-8" />
 		<meta name="author" content="Jordan Murphy & Farid Sawaqed" />
 		<meta name="description" content="{insert description here}"/>
@@ -18,40 +19,35 @@
 		<ul>
 			<li>
 				<div class = "content">
-					<h1>Administrator Login</h1>
-					<form action = "../Components/Models/adminLoginController.php" method = "POST">
+					<h1>Book your vacation today!</h1>
+					<?php
+						if ($_SESSION["dateError"] != ""){
+							?>
+								<p style = "color:red"><?php echo $_SESSION["dateError"];?></p>
+							<?php
+						}
+					?>
+					<form action = "../Views/availableRooms.php" method = "POST">
 						<center>
 							<table class = "content">
 								<tr>
 									<td>
-										<label for "username">Username</label>
+										<label for "checkInDate">Check In:</label>
 									</td>
 									<td>
-										<input type = "text" class = "form-control" id = "username" name = "username" required />
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<label for "lName">Password</label>
+										<input type = "date" class = "form-control" id = "checkInDate" name = "checkInDate" required />
 									</td>
 									<td>
-										<input type = "password" class = "form-control" id = "password" name = "password" required />
+										<label for "checkOutDate">Check Out:</label>
+									</td>
+									<td>
+										<input type = "date" class = "form-control" id = "checkOutDate" name = "checkOutDate" required />
 									</td>
 								</tr>
 							</table>
-							<button type = "submit" class = "submitBtn" value = "Login">Log In</button>
+							<button type = "submit" class = "submitBtn">Check Room Availability</button>
 						</center>
 					</form>
-					<?php
-						if (isset($_SESSION["error"])) {
-							if ($_SESSION["error"]){
-								?><br><p style= "color:red;">Invalid login, please try again</p><?php
-								$_SESSION["error"] = False;
-							} else {
-								$_SESSION["error"] = False;
-							}
-						}
-					?>
 				</div>
 			</li>
 		</ul>

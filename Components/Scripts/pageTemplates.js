@@ -31,7 +31,7 @@ if (currentFile.includes("admin")){
 					<a class = "navlinks" href="locations.php">Nearby Locations</a>
 				</li>
 				<li>
-					<a class = "navlinks" href="booking.php">Book Now!</a>
+					<a class = "navlinks" href="checkAvailability.php">Book Now!</a>
 				</li>
 				<li>
 					<a class = "navlinks" href="checkReservations.php">Check Your Reservation</a>
@@ -42,7 +42,7 @@ if (currentFile.includes("admin")){
 		<img src = "../Assets/background.PNG" alt = "Background" id = "background-desktop">
 		<button onclick="toTop()" id="topBtn" title="Go to top">&#8593;</button>
 		<div class = "bottomnav">
-			<p>[Insert Address Here]</p>
+			<p>400 Ocean Ave N, Belmar, NJ 07719</p>
 			<a href="" >Contact Us <i class = "fa fa-envelope"></i></a>
 		</div>
 	`;

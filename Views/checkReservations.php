@@ -15,7 +15,7 @@
 			<li>
 				<div class = "content">
 					<h1>Enter your confirmation number to check on your reservation</h1>
-					<form action = "../Components/Scripts/reservationController.php" method = "POST">
+					<form action = "../Views/reservationSearch.php" method = "POST">
 						<center>
 							<label for "confirmationNum">Confirmation Number</label>
 							<input type = "text" class = "form-control" id = "confirmationNum" name = "confirmationNum" required>

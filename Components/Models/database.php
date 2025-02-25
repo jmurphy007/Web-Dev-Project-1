@@ -1,23 +1,12 @@
 <?php
-	class Database{
-		private $host = "localhost";
-		private $db = "tropical byte hotel";
-		private $user = "root";
-		private $password - "";
-		private $pdo;
-		
-		public function connect(){
-			if ($this->pdo==null{
-				try{
-					$dsn = "mysql:host=$this->host; dbname=$this->db";
-					$this -> pdo = new PDO($dsn, $this->user, $this->password);
-					
-					$this -> pdo -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-				} catch(PDOException $e){
-					echo "Connection failed: "$e->getMessage();
-					echo "Please try again"
-				}
-			return $this->pdo;
-			}
-		}
+	$dsn = "mysql:host=localhost;dbname=tropical byte hotel";
+	$dbUsername = "root";
+	$dbPassword = "";
+	
+	try {
+		$db = new PDO($dsn, $dbUsername, $dbPassword);
+	} catch (PDOException $e){
+		$error_message = $e->getMessage();
+		echo "<p>An error has occured while connecting: $error_message </p>";
+	}
 ?>
