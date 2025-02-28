@@ -104,6 +104,9 @@
 								<input type = "hidden" class = "form-control" id = "checkOutDate" name = "checkOutDate" value = "<?php echo $checkOutDate?>" />
 								<button type = "submit" class = "submitBtn" name = "Book">Book Now!</button>
 							</form>
+							<form action = "home.php" method = "POST">
+								<button type = "submit" class = "submitBtn">Cancel</button>
+							</form>
 					</center>
 				</div>
 			</li>

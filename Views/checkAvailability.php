@@ -21,14 +21,14 @@
 				<div class = "content">
 					<h1>Book your vacation today!</h1>
 					<?php
-						if ($_SESSION["dateError"] != ""){
+						if (isset($_SESSION["dateError"]) and $_SESSION["dateError"] != ""){
 							?>
 								<p style = "color:red"><?php echo $_SESSION["dateError"];?></p>
 							<?php
 						}
 					?>
-					<form action = "../Views/availableRooms.php" method = "POST">
-						<center>
+					<center>
+						<form action = "../Views/availableRooms.php" method = "POST">
 							<table class = "content">
 								<tr>
 									<td>
@@ -46,8 +46,11 @@
 								</tr>
 							</table>
 							<button type = "submit" class = "submitBtn">Check Room Availability</button>
-						</center>
-					</form>
+						</form>
+						<form action = "home.php" method = "POST">
+							<button type = "submit" class = "submitBtn">Cancel</button>
+						</form>
+					</center>
 				</div>
 			</li>
 		</ul>

@@ -43,7 +43,7 @@ if (currentFile.includes("admin")){
 		<button onclick="toTop()" id="topBtn" title="Go to top">&#8593;</button>
 		<div class = "bottomnav">
 			<p>400 Ocean Ave N, Belmar, NJ 07719</p>
-			<a href="" >Contact Us <i class = "fa fa-envelope"></i></a>
+			<a href="contacts.php" >Contact Us <i class = "fa fa-envelope"></i></a>
 		</div>
 	`;
 }

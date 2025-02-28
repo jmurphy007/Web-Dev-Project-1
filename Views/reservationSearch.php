@@ -67,10 +67,6 @@
 											<td><?php echo $value['numChildren'];?></td>
 										</tr>
 										<tr class = "reservation">
-											<td>Number of Rooms:</td>
-											<td><?php echo $value['numRooms'];?></td>
-										</tr>
-										<tr class = "reservation">
 											<td>Check In Date:</td>
 											<td><?php echo $value['checkInDate'];?></td>
 										</tr>
