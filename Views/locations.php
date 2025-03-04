@@ -90,7 +90,6 @@
 					</center>
 				</div>
 			</li>
-			</li>
 		</ul>
 	</body>
 </html>
