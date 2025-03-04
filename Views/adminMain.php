@@ -43,7 +43,7 @@
 					<h1>Rooms</h1>
 					<center>
 						<?php
-							if (!$_SESSION["roomError"]){
+							if (isset($_SESSION["roomError"])){
 								if ($_SESSION["roomError"]){
 								?>
 									<h2 style = "color:red">Error with room database, please try again</h2>
@@ -58,6 +58,15 @@
 							?>
 								<h2 style = "color:red">No rooms at this time</h2>
 								<table>
+								<thead>
+									<tr>
+										<th>Room ID</th>
+										<th>Room Type</th>
+										<th>Room Price</th>
+										<th>Room Capacity</th>
+									</tr>
+								</thead>
+								<tbody>
 									<tr>
 										<form action = "../Components/Models/addRoom.php" method = "POST">
 											<td><input type = "hidden" id = "roomID" name = "roomID" value = "<?php echo $maxNum;?>" required /><?php echo $maxNum;?></td>
@@ -100,7 +109,6 @@
 										</tr>
 									<?php
 										}
-									}
 									?>
 									<tr>
 										<form action = "../Components/Models/addRoom.php" method = "POST">
@@ -111,6 +119,9 @@
 											<td colspan = "2"><button type = "submit" class = "submitBtn" name = "ADD" style = "width: 80%; font-size: 45px" >&#43;</button></td>
 										</form>
 									</tr>
+								<?php
+									}
+								?>
 								</tbody>
 							</table>
 					</center>
